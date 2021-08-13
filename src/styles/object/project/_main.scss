@@ -1,0 +1,44 @@
+.p-main-article{
+  width: 100%;
+  position: relative;
+
+  &:nth-child(1){
+    margin-bottom: 20px;
+  }
+
+  @include media(tab){
+    &:nth-child(1){
+      margin-bottom: 0;
+    }
+    &:nth-child(2){
+      margin-left: 5%;
+    }
+  }
+
+
+    &__title{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 41px;
+
+      &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        bottom: -15px;
+        left: 0;
+        background-color: #fff;
+      }
+    }
+
+    &__image{
+    width: 100%;
+    }
+  }
+
+
+

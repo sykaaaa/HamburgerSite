@@ -1,0 +1,27 @@
+.p-search{
+  max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @include media(pc){
+    margin: 0 20px 0 0;
+    padding-bottom: inherit;
+    display: flex;
+  }
+
+  &__box{
+    width: 60%;
+    height: 40px;
+    margin-right: 3%;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    background-color: #fff;
+
+    @include media(pc){
+      width: 30vw;
+
+
+    }
+  }
+}

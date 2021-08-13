@@ -1,0 +1,15 @@
+.l-contents-box{
+  @include media(pc){
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  }
+}
+
+.l-contents-wrapper{
+  @include media(pc){
+  width: 75%;
+  height: auto;
+  }
+}

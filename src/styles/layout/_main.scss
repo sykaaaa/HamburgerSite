@@ -1,0 +1,19 @@
+.l-main-wrapper{
+  width: 90%;
+  margin: 20px auto;
+
+  @include media(tab) {
+    display: flex;
+    margin: 5% auto;
+  }
+}
+
+.l-main--map{
+  width: 100%;
+  height: auto;
+
+  @include media(tab) {
+    width: 100%;
+    height: 41.5%;
+  }
+}

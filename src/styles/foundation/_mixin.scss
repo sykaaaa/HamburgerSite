@@ -1,0 +1,11 @@
+$breakpoints: (
+  sp: "only screen and (min-width : 375px)",
+  tab: "only screen and (min-width : 600px)",
+  pc: "only screen and (min-width: 1025px)",
+);
+
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints,$breakpoint)}{
+    @content;
+  }
+}

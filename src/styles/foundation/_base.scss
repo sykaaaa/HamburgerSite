@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: Roboto, "M+ 1m", serif;
+}
+
+body{
+  font-size: 62.5%;
+  width: 100%;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #707070;
+}
+
+li{
+  list-style: none;
+}
+
+

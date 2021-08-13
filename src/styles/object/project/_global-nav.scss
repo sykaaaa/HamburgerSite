@@ -1,0 +1,58 @@
+.p-global-nav{
+  width: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #f2ede9;
+
+  @include media(tab){
+    max-width: 300px;
+  }
+
+  &__title{
+    display: none;
+  }
+  
+  &__menu{
+    padding: 200px 0 0 20px;
+
+    &__title{
+      padding-bottom: 25px;
+ 
+
+      & > a{
+        display: block;
+        padding-bottom: 20px;
+        font-size: 22px;
+        font-weight: 900;
+      }
+    }
+    
+    &__list__item{
+      font-size: 18px;
+      padding-left: 15px;
+      line-height: 2.5;
+    }
+  }  
+}
+
+@include media(pc){
+  .p-global-nav{
+   width: 25%;
+   z-index: inherit;
+   height: auto;
+
+    &__title{
+      display: block;
+      font-size: 24px;
+      padding: 30px 0 0 15px;
+    }
+
+    &__menu{
+      padding-top: 50px;
+    }
+
+  
+  }
+}
