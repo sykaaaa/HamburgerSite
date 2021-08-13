@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+body.is-open {
+  position: fixed;
+}
+
 img {
   max-width: 100%;
 }
@@ -135,7 +139,7 @@ li {
 }
 
 .c-button--nav {
-  position: absolute;
+  position: fixed;
   display: block;
   z-index: 200;
   top: 0px;
@@ -468,7 +472,9 @@ li {
 
 .p-global-nav {
   width: 75%;
-  position: absolute;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
   top: 0;
   right: 0;
   z-index: 100;
@@ -487,6 +493,8 @@ li {
 
 .p-global-nav__menu {
   padding: 200px 0 0 20px;
+  height: 100%;
+  overflow: auto;
 }
 
 .p-global-nav__menu__title {
@@ -504,11 +512,13 @@ li {
   font-size: 18px;
   padding-left: 15px;
   line-height: 2.5;
+  overflow: auto;
 }
 
 @media only screen and (min-width: 1025px) {
   .p-global-nav {
     width: 25%;
+    position: absolute;
     z-index: inherit;
     height: auto;
   }

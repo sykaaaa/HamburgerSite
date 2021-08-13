@@ -1,6 +1,8 @@
 .p-global-nav{
   width: 75%;
-  position: absolute;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
   top: 0;
   right: 0;
   z-index: 100;
@@ -16,6 +18,9 @@
   
   &__menu{
     padding: 200px 0 0 20px;
+    height: 100%;
+    overflow: auto;
+
 
     &__title{
       padding-bottom: 25px;
@@ -28,11 +33,12 @@
         font-weight: 900;
       }
     }
-    
+
     &__list__item{
       font-size: 18px;
       padding-left: 15px;
       line-height: 2.5;
+      overflow: auto;
     }
   }  
 }
@@ -40,6 +46,7 @@
 @include media(pc){
   .p-global-nav{
    width: 25%;
+   position: absolute;
    z-index: inherit;
    height: auto;
 
