@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <!-- <div class="l-blackLayer">メニューオープン時にフェードイン -->
   <div class="l-contents-box">
   <div class="l-contents-wrapper">
   <header class="l-header p-header" >
@@ -85,8 +84,9 @@
   </div> <!--/.contents-wrapper-->
 
   <aside class="l-aside p-aside">
-    <span class="c-button--nav js-btn"></span>
+    <div class="l-blackLayer"> </div> <!--/.l-blackLayer-->
     <nav class="p-global-nav">
+      <span class="c-button--nav js-btn"></span>
       <span class="p-global-nav__title">Menu</span>
       <ul class="p-global-nav__menu">
         <li class="p-global-nav__menu__title"><a href="#">バーガー</a>
@@ -130,7 +130,6 @@
     <p class="p-footer__copyright">Copyright RaiseTech</p>
   </footer>
 
- <!-- </div> /.l-blackLayer -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>

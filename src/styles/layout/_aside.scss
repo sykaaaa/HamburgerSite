@@ -1,11 +1,13 @@
 .l-aside{
   width: 100%;
-  color: #707070;
   display: none;
+  color: #707070;
+
 
   @include media(pc){
+    width: 20%;
+    min-width: 300px;
     display: block;
-    width: 25%;
     justify-content: flex-end;
     background-color: #f2ede9;
   }
@@ -13,9 +15,4 @@
 
 .l-aside.is-open{
   display: block;
-}
-
-.l-aside.is-close{
-  display: none;
-
 }
