@@ -111,11 +111,49 @@ li {
   z-index: 50;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .l-blackLayer.is-open {
   display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: bg-color 0.3s;
+          animation: bg-color 0.3s;
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  40% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  60% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  40% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  60% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -449,7 +487,7 @@ li {
   position: absolute;
   top: 20%;
   left: 7%;
-  overflow: auto;
+  overflow: hidden;
   font-size: 0.9rem;
   line-height: 3;
 }
@@ -483,6 +521,10 @@ li {
   right: 0;
   z-index: 100;
   background-color: #f2ede9;
+}
+
+.p-global-nav::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {

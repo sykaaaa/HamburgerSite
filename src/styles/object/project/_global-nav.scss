@@ -7,7 +7,10 @@
   right: 0;
   z-index: 100;
   background-color: #f2ede9;
-
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
   @include media(tab){
     max-width: 300px;
   }
