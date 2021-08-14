@@ -4,9 +4,16 @@
   position: fixed;
   overflow-y: scroll;
   top: 0;
-  right: 0;
+  right: -500px;
+  transition: all 1s;
   z-index: 100;
   background-color: #f2ede9;
+  
+  &.is-open{
+    right: 0;
+  }
+
+  //PCの時のスクロールバー非表示
   &::-webkit-scrollbar {
     display: none;
   }

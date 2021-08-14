@@ -36,7 +36,7 @@
     height: 691px;
     opacity: 0.5;
     display: block;
-    background-size: contain;
+    background-size: cover;
 
     @include media(tab) {
       height: 100%;
