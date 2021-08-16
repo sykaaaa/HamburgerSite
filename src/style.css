@@ -350,6 +350,49 @@ li {
   background-size: cover;
 }
 
+.p-mainvisual--archive {
+  position: relative;
+}
+
+.p-mainvisual--archive img {
+  width: 100%;
+  height: 283px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+}
+
+.p-mainvisual--archive h2 {
+  font-size: 36px;
+  position: absolute;
+  z-index: 200;
+  top: 41%;
+  left: 37px;
+  color: #FFFFFF;
+}
+
+.p-mainvisual--archive p {
+  font-size: 16px;
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  left: 37px;
+  padding-top: 25px;
+  color: #FFFFFF;
+}
+
+.p-mainvisual--archive::after {
+  content: "";
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .p-main-article {
   width: 100%;
   position: relative;
