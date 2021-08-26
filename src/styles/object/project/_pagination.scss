@@ -1,0 +1,11 @@
+.p-pagination{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 31px;
+
+  &__item{
+    font-size: 16px;
+    
+  }
+}
