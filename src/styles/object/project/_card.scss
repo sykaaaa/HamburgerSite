@@ -20,3 +20,47 @@
   color: #3C2A10;
   }
 }
+
+// ====================================
+// archive
+// ====================================
+
+.p-card--archive{
+  margin-bottom: 20px;
+  
+  @include media(tab){
+    display: flex;
+    width: 100%;
+    height: 354px;
+  }
+
+  @include media(pc){
+    display: flex;
+    width: 100%;
+    height: 471px;
+  }
+}
+
+.p-card__imagebox{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    background-image: url(../../../../img/archive-pc.png);
+    background-size: cover;
+
+    @include media(tab){
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+.p-card-box--archive{
+  background-color: #3C2B1C;
+  position: relative;
+  color: #fff;
+  padding-bottom: 60px;
+
+  @include media(tab){
+    width: 50%;
+  }
+}
