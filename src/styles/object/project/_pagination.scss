@@ -1,11 +1,71 @@
 .p-pagination{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 31px;
+  color: #707070;
 
-  &__item{
+  &__currentpage{
+    display: none;
+
+    @include media(tab){
+      display: block;
+      margin-right: 15px;
+    }
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 31px;
     font-size: 16px;
+
+    @include media(tab){
+      justify-content: center;
+      align-items: center;
+      }
+  
+      &__item--previous{
+        &::after{
+          content: " 前へ";
     
+          @include media(tab){
+            display: none;
+          }
+        }
+      }
+    
+      &__item--next{
+        &::before{
+          content: " 次へ ";
+    
+          @include media(tab){
+            display: none;
+          }
+        }
+      }
+
+      &__number{
+        display: none;
+    
+        @include media(tab){
+          display: block;
+        }
+
+        & span{
+          display: flex;
+          width: 35px;
+          height: 35px;
+          margin-left: 15px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #707070;
+        }
+
+        &:nth-last-child(2){
+          margin-right: 15px;
+        }
+      }
   }
 }
+
+// .p-pagination ul li:nth-last-child(2){
+//   margin-right: 15px;
+// }

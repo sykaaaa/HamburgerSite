@@ -43,8 +43,8 @@
 
     @include media(tab){
       width: 85%;
-      font-size: 1.5vw;
-      padding: 0 0 45px 34.7px;
+      font-size: 1.8vw;
+      padding-left: 34.7px;
     }
 
     @include media(pc){
