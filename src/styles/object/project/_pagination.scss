@@ -17,6 +17,11 @@
     padding-bottom: 31px;
     font-size: 16px;
 
+    @include media(pc){
+      padding-top: 130px;
+      padding-bottom: 64px;
+    }
+
     @include media(tab){
       justify-content: center;
       align-items: center;
@@ -54,18 +59,32 @@
           width: 35px;
           height: 35px;
           margin-left: 15px;
-          align-items: center;
-          justify-content: center;
           border: 1px solid #707070;
         }
 
         &:nth-last-child(2){
           margin-right: 15px;
         }
+
+        & a{
+          display: flex;
+          width: 35px;
+          height: 35px;
+          align-items: center;
+          justify-content: center;
+
+          &:hover{
+            background-color: #3C2B1C;
+            color: #fff;
+          }
+        }
       }
   }
 }
 
-// .p-pagination ul li:nth-last-child(2){
-//   margin-right: 15px;
-// }
+// 現在のページ（ぺジネーション）
+.current{
+  background-color: #3C2B1C;
+  color: #fff;
+}
+

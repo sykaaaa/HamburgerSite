@@ -17,6 +17,10 @@
       padding-bottom: 37px;
     }
 
+    @include media(pc){
+      padding-bottom: 70px;
+    }
+
     & p{
       font-size: 16px;
     }
