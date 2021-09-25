@@ -49,4 +49,53 @@
 // archive.html
 // ===========================================
 
+// ===========================================
+// single.html
+// ===========================================
+.p-main{
+  &--single{
+    color: #3C2A10;
+
+
+    & h2{
+      font-size: 28px;
+      padding: 30px 0;
+
+      @include media(tab){
+        font-size: 36px;
+        padding: 60px 0;
+      }
+    }
+
+    & h3{
+      font-size: 24px;
+      padding-bottom: 31px;
+
+      @include media(tab){
+        font-size: 28px;
+        padding: 60px 0;
+      }
+    }
+
+    & h4,h5,h6{
+      font-size: 20px;
+    }
+
+    & h5,h6{
+      padding-bottom: 20px;
+
+      @include media(tab){
+        padding-bottom: 60px;
+      }
+    }
+
+    & h4{
+      padding-bottom: 37px;
+
+      @include media(tab){
+        padding-bottom: 74px;
+      }
+    }
+  }
+}
 
