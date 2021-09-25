@@ -9,8 +9,10 @@
     }
 
     @include media(pc){
-      height: 400px;
-    }
+      max-height: 500px;
+      height: 60%;
+
+    } 
 
     & img{
       width: 100%;
